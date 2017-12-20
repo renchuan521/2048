@@ -1,0 +1,112 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body,p{
+	font-family: 'microsoft yahei';
+	font-size: 16px;
+}
+a,button{
+	cursor: pointer;
+}
+.white{
+	color: #fff;
+}
+@media screen and (max-width: 600px){
+	.tip{
+		display: none;
+	}
+}
+
+#game{
+	max-width: 800px;
+	max-height: 800px;
+	margin: 10px auto;
+}
+#profile{
+	height: 100px;
+	overflow: hidden;
+	position: relative;
+}
+#profile button{
+	position: absolute;
+	width: 100px;
+	height: 30px;
+	right: 0px;
+	bottom: 4px;
+	border: 1px solid #8F7A66;
+	background: #8F7A66;
+	border-radius: 4px;
+}
+#score,#maxscore{
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	text-align: center;
+	background:#bbadae;
+	border: 1px solid #bbadae;
+	border-radius: 4px;
+	line-height: 30px;
+	color: #fff;
+}
+#maxscore p,#score p{
+	font-size: 24px;
+}
+#maxscore{
+	right: 0px;
+	top: 0px;
+}
+#score{
+	right: 110px;
+	top:0px;
+}
+#view{
+	padding: 10px;
+	background: #bbada1;
+	border-radius: 10px;
+}
+
+.mask{
+	/*position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left: 0px;*/
+	display: none;
+}
+.shadow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: rgba(255,255,255,0.5);
+	z-index: 1;
+}
+.gameover{
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -50px;
+	background: #fff;
+	border:2px solid #EDC53E;
+	padding: 10px;
+	z-index: 3;
+	text-align: center;
+}
+.gameover p{
+	line-height: 60px;
+	font-size: 30px;	
+}
+.gameover button{
+	width: 100px;
+	height: 30px;
+	background: #EDCD60;
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	font-size: 18px;
+}
